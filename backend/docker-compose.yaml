@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  backend:
+    image: ayushmartin/team-management:latest
+    restart: always
+    container_name: backend
+    env_file:
+      - .env
+    ports:
+      - "5000:5000"
